@@ -8,13 +8,20 @@ public class Sprint1prog {
         String dir;
         Scanner sc = new Scanner(System.in);
 
+        //------------------------------------------------------------------------------------------------------------------
+
+        //Apresentação das regras
+
         System.out.println("Regras:");
         System.out.println("\uF0E8 Direções inválidas resultam em encerramento imediato da partida:");
         System.out.println("\uF0E8 Distancias negativas resultam em encerramento imediato da partida");
         System.out.println("\uF0E8 Se o movimento leva o robô para fora dos limites do armazém o comando será invalidado");
         System.out.println("\uF0E8 Se o movimento leva o robô a colidir com uma prateleira o comando será invalidado");
-
         System.out.println("\uF0E8 Os sentidos permitos para movimetos são ‘Frente’, ‘Trás’, ‘Esquerda’ ou ‘Direita’");
+
+        //inicio no programa
+
+        //------------------------------------------------------------------------------------------------------------------
 
         //movimento 1
 
@@ -56,6 +63,8 @@ public class Sprint1prog {
             System.out.println("Comando inválido!");
             System.out.println(" ");
         }
+
+        //------------------------------------------------------------------------------------------------------------------
 
         //Movimento 2
 
@@ -108,6 +117,8 @@ public class Sprint1prog {
             System.out.println("Comando inválido!");
             System.out.println(" ");
         }
+
+        //------------------------------------------------------------------------------------------------------------------
 
         //Movimento 3
 
@@ -172,6 +183,8 @@ public class Sprint1prog {
             System.out.println("Comando inválido!");
             System.out.println(" ");
         }
+
+        //------------------------------------------------------------------------------------------------------------------
 
         //Movimento 4
 
@@ -244,6 +257,8 @@ public class Sprint1prog {
             System.out.println("Comando inválido!");
             System.out.println(" ");
         }
+
+        //------------------------------------------------------------------------------------------------------------------
 
         //Movimento 5
 
@@ -326,6 +341,8 @@ public class Sprint1prog {
             System.out.println("Comando inválido!");
             System.out.println(" ");
         }
+
+        //------------------------------------------------------------------------------------------------------------------
 
         //Movimento 6
 
@@ -420,6 +437,8 @@ public class Sprint1prog {
             System.out.println("Comando inválido!");
         }
 
+        //------------------------------------------------------------------------------------------------------------------
+
         //Movimento 7
 
         System.out.println("Comando n° " + comando);
@@ -511,9 +530,13 @@ public class Sprint1prog {
             System.out.println(" ");
         }
 
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Resultados finais
+
         if (posicao != 6){
             System.out.println("Falha em atingir a Saída");
-            System.out.println("Posição final do mapa: " + posicao);
+            System.out.println("Fileira máxima atingida no mapa: " + posicao);
         }
         else {
             System.out.println("Saída atingida");
@@ -523,13 +546,15 @@ public class Sprint1prog {
             System.out.println("O valor do percurso foi de: R$ " + valor);
             System.out.println(" ");
 
+            //------------------------------------------------------------------------------------------------------------------
+
+            //Classificação da rota
+
             if (valor >= 5.1 && valor <= 10){
                 System.out.println("Rota moderada");
             } else if (valor > 10) {
                 System.out.println("Rota ineficiente");
-
-            }
-            else {
+            } else {
                 System.out.println("Rota econômica");
             }
         }
